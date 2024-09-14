@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Landscape Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(135deg, #a2c2e6, #d6a4a4);
+            color: #333;
+        }
+        
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-links {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .footer-links a {
+            color: #a2c2e6;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+        
+        .contact h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #004d40;
+            background: linear-gradient(90deg, #4CAF50 0%, #8BC34A 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        #contact-form {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        #contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        #contact-form input,
+        #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        #contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        #contact-form button {
+            background-color: #004d40;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        
+        #contact-form button:hover {
+            background-color: #003d33;
+        }
+        
+        .contact-info {
+            margin-top: 30px;
+            text-align: left;
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        
+        .contact-info h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #004d40;
+        }
+        
+        .map {
+            margin-top: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .map iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+        
+        .social-media {
+            margin-top: 30px;
+        }
+        
+        .social-media a {
+            color: #004d40;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.5em;
+        }
+        
+        .social-media a:hover {
+            color: #003d33;
+        }
+        
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+            
+            #contact-form {
+                padding: 15px;
+            }
+            
+            .contact-info {
+                padding: 15px;
+            }
+            
+            .map iframe {
+                height: 300px;
+            }
+            
+            .social-media a {
+                font-size: 1.2em;
+                margin: 0 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact h1 {
+                font-size: 1.8em;
+            }
+
+            #contact-form button {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+
+            .social-media a {
+                font-size: 1em;
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="payment.html">Payment</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Address: 123 Landscape Lane, Garden City</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@landscapeservices.com</p>
+            </div>
+            <div class="map">
+                <h2>Our Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.597807157238!2d-71.04832808454523!3d42.33920827918862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a4d6aebeaef%3A0x7a6c3d1f9ae99b!2s123%20Landscape%20Lane%2C%20Garden%20City%2C%20MA%2048075!5e0!3m2!1sen!2sus!4v1637512207276!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/yourcompany" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Landscape Services</p>
+        <div class="footer-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="payment.html">Payment</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Landscape Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(135deg, #a2c2e6, #d6a4a4);
+            color: #333;
+        }
+        
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-links {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .footer-links a {
+            color: #a2c2e6;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .services {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            margin: 60px auto 0;
+        }
+        
+        .services h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #004d40;
+            background: linear-gradient(90deg, #4CAF50 0%, #8BC34A 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .service {
+            margin-bottom: 30px;
+            display: inline-block;
+            width: 300px;
+            vertical-align: top;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .service img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .service h2 {
+            font-size: 1.8em;
+            margin: 15px 0;
+            color: #004d40;
+        }
+        
+        .service p {
+            font-size: 1em;
+            color: #555555;
+        }
+        
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+            
+            .services {
+                padding: 20px;
+                margin-top: 40px;
+            }
+            
+            .service {
+                width: 100%;
+                margin: 0 auto 30px;
+            }
+            
+            .service img {
+                height: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .services h1 {
+                font-size: 1.8em;
+            }
+
+            .service h2 {
+                font-size: 1.5em;
+            }
+
+            .service p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                <li><a href="payment.html"><i class="fas fa-credit-card"></i> Payment</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="services">
+            <h1>Our Services</h1>
+            <div class="service">
+                <img src="ser-ls-design.jpg" alt="Design">
+                <h2>Design</h2>
+                <p>We provide custom landscape design services to bring your vision to life. Our team works closely with you to create a design that suits your style and needs.</p>
+            </div>
+            <div class="service">
+                <img src="ser-ls-install.jpg" alt="Installation">
+                <h2>Installation</h2>
+                <p>Professional installation of all landscape features, including plants, hardscapes, and water features. We ensure everything is set up correctly and efficiently.</p>
+            </div>
+            <div class="service">
+                <img src="ser-ls-main.jpg" alt="Maintenance">
+                <h2>Maintenance</h2>
+                <p>Ongoing maintenance to keep your landscape looking its best year-round. Our services include lawn care, pruning, and seasonal clean-ups.</p>
+            </div>
+            <div class="service">
+                <img src="ser-ls-lighting.jpg" alt="Lighting">
+                <h2>Outdoor Lighting</h2>
+                <p>Enhance the beauty and security of your property with our outdoor lighting solutions. We design and install lighting that highlights your landscape features and improves safety.</p>
+            </div>
+            <div class="service">
+                <img src="ser-ls-irrigation.jpg" alt="Irrigation">
+                <h2>Irrigation Systems</h2>
+                <p>Efficient irrigation systems to ensure your garden and lawn receive the right amount of water. We offer installation and maintenance of sprinkler systems and drip irrigation.</p>
+            </div>
+            <div class="service">
+                <img src="ser-ls-hardscaping.jpg" alt="Hardscaping">
+                <h2>Hardscaping</h2>
+                <p>Design and installation of hardscaping elements such as patios, walkways, retaining walls, and fire pits. Our hardscaping enhances both the function and aesthetics of your outdoor space.</p>
+            </div>
+            <div class="service">
+                <img src="ser-ls-pool.jpg" alt="Pool Design">
+                <h2>Pool Design & Installation</h2>
+                <p>Custom pool design and installation to create the perfect aquatic retreat in your backyard. We handle everything from concept to completion, ensuring a beautiful and functional pool area.</p>
+            </div>
+            <div class="service">
+                <img src="ser-ls-garden.jpg" alt="Garden Design">
+                <h2>Garden Design</h2>
+                <p>Expert garden design services to help you cultivate a lush, vibrant garden. We assist with plant selection, layout, and garden features to create a stunning and sustainable garden space.</p>
+            </div>
+            <div class="service">
+                <img src="ser-ls-outdoor-living.jpg" alt="Outdoor Living">
+                <h2>Outdoor Living Spaces</h2>
+                <p>Create the ultimate outdoor living area with our design and construction services. We build custom outdoor kitchens, dining areas, and lounges to enhance your outdoor entertaining experience.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Landscape Services</p>
+        <div class="footer-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html"><i class="fas fa-user"></i> About</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+            <a href="payment.html"><i class="fas fa-credit-card"></i> Payment</a>
+        </div>
+    </footer>
+</body>
+</html>
